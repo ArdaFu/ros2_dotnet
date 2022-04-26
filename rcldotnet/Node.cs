@@ -73,7 +73,7 @@ namespace ROS2 {
 
     public IList<ISubscriptionBase> Subscriptions { get { return subscriptions_; } }
 
-    public IntPtr Handle { get; }
+    public IntPtr Handle { get; private set;}
 
     public IPublisher<T> CreatePublisher<T> (string topic) where T : IMessage {
       MethodInfo m = typeof (T).GetTypeInfo().GetDeclaredMethod ("_GET_TYPE_SUPPORT");

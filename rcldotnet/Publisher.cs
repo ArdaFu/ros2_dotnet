@@ -50,7 +50,7 @@ namespace ROS2 {
         Handle = handle;
       }
 
-      public IntPtr Handle { get; }
+      public IntPtr Handle { get; private set;}
 
       public void Publish (T msg) {
         IntPtr messageHandle = msg._CREATE_NATIVE_MESSAGE ();

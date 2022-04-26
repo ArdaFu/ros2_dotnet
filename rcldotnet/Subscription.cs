@@ -32,7 +32,7 @@ namespace ROS2 {
         callback_ = callback;
       }
 
-      public IntPtr Handle { get; }
+      public IntPtr Handle { get; private set;}
 
       public IMessage CreateMessage () {
         IMessage msg = (IMessage) new T ();
