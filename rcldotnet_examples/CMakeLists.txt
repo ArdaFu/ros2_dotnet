@@ -12,7 +12,8 @@ find_package(rcldotnet REQUIRED)
 
 find_package(dotnet_cmake_module REQUIRED)
 
-set(CSHARP_TARGET_FRAMEWORK "netcoreapp2.0")
+#set(CSHARP_TARGET_FRAMEWORK "netcoreapp3.1")
+set(CSHARP_TARGET_FRAMEWORK_VERSION "4.8")
 find_package(DotNETExtra REQUIRED)
 
 set(_assemblies_dep_dlls
