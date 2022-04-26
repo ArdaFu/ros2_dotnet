@@ -81,6 +81,8 @@ ament_export_dependencies(rcl)
 ament_export_dependencies(rosidl_generator_c)
 ament_export_dependencies(rosidl_typesupport_c)
 
+set(BUILD_TESTING OFF)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
